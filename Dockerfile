@@ -5,7 +5,7 @@ MAINTAINER Stas Alekseev <stas.alekseev@gmail.com>
 ENV HAPROXY_VERSION=1.5.14
 
 RUN \
-  yum install -y epel-release && \
+  yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \
   yum install -y inotify-tools wget tar gzip make gcc pcre-devel openssl-devel && \
   wget -O /tmp/haproxy.tgz http://www.haproxy.org/download/1.5/src/haproxy-${HAPROXY_VERSION}.tar.gz && \
   mkdir -p /usr/local/haproxy && \
