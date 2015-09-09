@@ -1,5 +1,6 @@
-FROM centos:centos7
-MAINTAINER Marcin Ryzycki marcin@m12.io, Przemyslaw Ozgo linux@ozgo.info
+FROM oraclelinux:7.1
+
+MAINTAINER Stas Alekseev <stas.alekseev@gmail.com>
 
 ENV HAPROXY_VERSION=1.5.14
 
